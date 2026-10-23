@@ -42,6 +42,13 @@ include:
   # => make sure the `board` field matches the MCU on your keyboard
   ##
 
+    # Qmx204O
+  - board: sparkfun_pro_micro_rp2040//zmk
+    shield: qmx2040
+    artifact-name: qmx2040
+    snippet: studio-rpc-usb-uart zmk-usb-logging
+    cmake-args: &cmake-args -DCONFIG_ZMK_STUDIO=y -DCONFIG_ZMK_POINTING=y
+
     # Quacken Zero + SparkFun RP2040
   - board: sparkfun_pro_micro_rp2040//zmk
     shield: quacken_zero
